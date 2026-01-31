@@ -1,26 +1,7 @@
 # CJR
 CJR project
-# Logistic Regression from Scratch using NumPy
+The learned logistic regression coefficients are *[0.39, -0.51, 2.56, 1.01], with a bias term of **0.43*. Since all features were standardized, the magnitude and sign of each coefficient directly represent its relative influence on the probability of predicting the positive class.
 
-## Project Overview
-This project implements a binary Logistic Regression model entirely from scratch using NumPy. The objective is to understand the internal workings of logistic regression without relying on machine learning libraries.
+The *third feature (2.56)* has the strongest positive impact, indicating that increases in this feature substantially raise the likelihood of the positive outcome. The *fourth feature (1.01)* also contributes positively but with a more moderate effect. The *first feature (0.39)* has a smaller positive influence on the predicted probability. In contrast, the *second feature (-0.51)* negatively affects the prediction, meaning higher values of this feature reduce the probability of belonging to the positive class.
 
-## Key Features
-- Custom sigmoid function
-- Binary Cross-Entropy loss
-- Batch Gradient Descent optimization
-- Train-test split and feature scaling
-- Model evaluation using accuracy
-
-## Dataset
-Synthetic binary classification data was generated using `make_classification` with 4 features. All features were standardized using `StandardScaler`.
-
-## Files
-- `logistic_regression.py` / notebook: Model implementation and training
-- `README.md`: Project explanation and summary
-
-## Results
-The model successfully converges and achieves good classification accuracy on the test dataset. Learned weights and bias are reported and interpreted in the written analysis.
-
-## Conclusion
-This project demonstrates a clear and correct implementation of logistic regression fundamentals and provides interpretability of learned parameters.
+Overall, the model demonstrates meaningful feature separation and interpretability, aligning with the expected behavior of logistic regression in binary classification tasks.
